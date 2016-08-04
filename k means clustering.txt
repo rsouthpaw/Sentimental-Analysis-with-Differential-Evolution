@@ -1,0 +1,21 @@
+from nltk.cluster import KMeansClusterer, euclidean_distance
+
+#vectors = [numpy.array(f) for f in [[2, 1], [1, 3], [4, 7], [6, 7]]]
+vectors = [np.array(f) for f in combined]
+#take combined from file combining the array
+means = [[4, 3], [5, 5]]
+#either take this or try means=[[m[10],l[10]],[m[20],l[20]]]
+
+#vectors = [numpy.array(f) for f in [[3, 3], [1, 2], [4, 2], [4, 0], [2, 3], [3, 1]]]
+
+#test k-means using the euclidean distance metric, 2 means and repeat
+#clustering 10 times with random seeds
+
+clusterer = KMeansClusterer(3, euclidean_distance, repeats=10)
+clusters = clusterer.cluster(vectors, True)
+print('Clustered:', vectors)
+print('As:', clusters)
+print('Means:', clusterer.means())
+print()
+
+#mail id: saranshmiglani@gmail.com

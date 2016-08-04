@@ -1,0 +1,11 @@
+
+#takes data from k5
+#will convert into array
+
+import numpy as np
+
+data = np.loadtxt("C:\Users\Saransh01\Desktop\kk5.txt")
+m = data[:,0] #first_row
+l = data[:,1] #second_row
+
+#mail id: saranshmiglani@gmail.com

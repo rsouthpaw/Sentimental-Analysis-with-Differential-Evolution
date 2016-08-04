@@ -1,0 +1,19 @@
+f = open('C:\Users\Saransh01\Desktop\Output6.txt','r')
+a = ['{:vector=>[',',','] :cost=>0}']
+lst = []
+for line in f:
+    for word in a:
+        if word in line:
+            line = line.replace(word,'')
+    lst.append(line)
+
+
+f.close()
+f = open('C:\Users\Saransh01\Desktop\kk5.txt','w')
+for line in lst:
+    f.write(line)
+
+
+f.close()
+
+#mail id: saranshmiglani@gmail.com

@@ -1,0 +1,10 @@
+i=0
+s=[]
+for i in range(0,len(clusterer.means())):
+    a=clusterer.means()[i][0]
+    b=clusterer.means()[i][1]
+    c=a+b
+    s.append(c)
+    i=i+1
+
+#mail id: saranshmiglani@gmail.com

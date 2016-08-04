@@ -1,0 +1,15 @@
+#combining 2 1d arrays to 1 2d array
+#this combined array will go to nltk k means classifier
+#combined will further create clusters
+import numpy as np
+#m will be the array from f and f which has following
+#l will be the array from f and f which has followers
+tp = np.array(m)
+tp.ndim
+fp = np.array(l)
+fp.ndim
+fp.shape
+combined = np.vstack((tp, fp)).T
+print combined
+
+#mail id: saranshmiglani@gmail.com

@@ -1,0 +1,18 @@
+i=0
+for i in range(0,len(l)):
+    l[i]=l[i]*math.pow(10,17)
+    i=i+1
+
+
+i=0
+for i in range(0,len(m)):
+    m[i]=m[i]*math.pow(10,17)
+    i=i+1
+
+
+import matplotlib.pyplot as plt
+plt.plot(m,l,'ro')
+plt.axis([min(m)-2, max(m)+5, min(l)-2, max(l)+5])
+plt.show()
+
+#mail id: saranshmiglani@gmail.com

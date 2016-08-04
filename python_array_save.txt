@@ -1,0 +1,4 @@
+import numpy as np
+np.savetxt("C:\Users\Saransh01\Desktop\Saved_Array.txt", combined,fmt='%1.1d')
+
+#mail id: saranshmiglani@gmail.com
